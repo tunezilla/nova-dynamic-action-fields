@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DynamicFieldsServiceProvider"
+                "TuneZilla\\DynamicActionFields\\DynamicFieldsServiceProvider"
             ]
         }
     },
