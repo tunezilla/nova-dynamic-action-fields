@@ -42,7 +42,7 @@ export default {
   methods: {
     loadAction() {
       this.dynamicAction = null;
-      window.axios.get(`/nova-vendor/dynamic-action-fields/${this.resourceName}/dynamic-fields`, {
+      window.axios.get(`/nova-vendor/dynamic-action-fields/actions/${this.resourceName}/dynamic-fields`, {
         params: {
           resources: Array.isArray(this.selectedResources) ? this.selectedResources.join(',') : this.selectedResources,
           action: this.action.uriKey,
