@@ -21,7 +21,7 @@ trait DynamicFieldAction
 
         $models = [];
 
-        if ($actionRequest->has('resources') && !$actionRequest->forAllMatchingResources()) {
+        if ($actionRequest->has('resources')) {
             $actionRequest->chunks(100, function ($chunkedModels) use (&$models) {
                 /** @var \Illuminate\Database\Eloquent\Collection $chunkedModels */
                 $models = array_merge($models, $chunkedModels->all());
