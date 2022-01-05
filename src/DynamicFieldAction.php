@@ -7,7 +7,8 @@ use Laravel\Nova\Http\Requests\ActionRequest;
 
 trait DynamicFieldAction
 {
-    public ?ActionRequest $actionRequest = null;
+    /** @var ActionRequest|null */
+    public $actionRequest = null;
 
     final public function component()
     {
